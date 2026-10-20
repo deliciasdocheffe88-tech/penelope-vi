@@ -12,3 +12,9 @@ Atualização da Penelope VI com cálculo nutricional automático aproximado.
 - histórico anterior é preservado porque o banco IndexedDB e a origem do aplicativo não mudam.
 
 Os valores do banco são referências médias aproximadas e podem variar por marca, receita e modo de preparo.
+
+
+## Atualização 7.1
+- Timer de descanso com alarme sonoro de três tons ao chegar a zero.
+- Vibração reforçada ao final do descanso, quando suportada pelo aparelho.
+- O som depende das permissões/restrições de áudio do navegador e é mais confiável com o app aberto/ativo.
