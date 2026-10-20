@@ -43,3 +43,5 @@ canvas{width:100%;height:220px;background:#160f16;border:1px solid #5a3650;borde
 }
 .meal-photo-note{margin-top:9px}
 .meal-thumb{width:78px;height:78px;object-fit:cover;border-radius:12px;border:1px solid var(--line);margin-top:8px;background:#160f16}
+
+.food-db-note{margin:0 0 12px;line-height:1.45}.macro-grid{margin-top:10px}.food-calc-status{margin:10px 0 2px;padding:10px 12px;border-radius:12px;border:1px dashed #6f4562;background:#1a1119;color:var(--muted);font-size:.76rem;font-weight:800}.food-calc-status.found{border-style:solid;border-color:#4c8f6d;background:#102119;color:#b9f2d2}.food-calc-status.warnbox{border-style:solid;border-color:#9b6c38;background:#271c10;color:#f4d5a4}#foodDatabaseList{display:none}
