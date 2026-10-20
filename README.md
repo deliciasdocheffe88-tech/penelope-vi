@@ -1,20 +1,11 @@
-# Penelope VII — Banco de Alimentos
+# Penelope VII — atualização Meta de Peso
 
-Atualização da Penelope VI com cálculo nutricional automático aproximado.
+Esta atualização adiciona acompanhamento de meta final de peso.
 
-## Novidades
-- banco offline de alimentos comuns;
-- busca por nome com sugestões;
-- cálculo automático por gramas, mililitros ou unidade quando disponível;
-- kcal, proteína, carboidratos, gorduras e fibras preenchidos automaticamente;
-- valores continuam editáveis para uso do rótulo de marcas específicas;
-- alimentos fora do banco continuam aceitando preenchimento manual;
-- histórico anterior é preservado porque o banco IndexedDB e a origem do aplicativo não mudam.
-
-Os valores do banco são referências médias aproximadas e podem variar por marca, receita e modo de preparo.
-
-
-## Atualização 7.1
-- Timer de descanso com alarme sonoro de três tons ao chegar a zero.
-- Vibração reforçada ao final do descanso, quando suportada pelo aparelho.
-- O som depende das permissões/restrições de áudio do navegador e é mais confiável com o app aberto/ativo.
+- Meta padrão configurada: 85 kg.
+- Peso inicial de referência padrão: 121 kg.
+- Ambos podem ser alterados em Diário → Corpo.
+- A tela Hoje mostra peso atual, meta, quanto falta e percentual do caminho.
+- O painel Corpo também mostra o progresso.
+- Mantém banco de alimentos e alarme sonoro do timer.
+- Mantém o mesmo IndexedDB para preservar os registros locais.
