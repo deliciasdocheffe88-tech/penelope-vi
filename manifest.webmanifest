@@ -1,7 +1,7 @@
 {
-  "name": "Penelope VII — Nutrição & Treino",
-  "short_name": "Penelope VII",
-  "description": "PWA pessoal para treino e nutrição com banco de alimentos e cálculo automático aproximado de calorias e macronutrientes.",
+  "name": "Penelope VIII — Nutrição, Treino & Evolução",
+  "short_name": "Penelope VIII",
+  "description": "PWA pessoal para treino, nutrição, medidas e fotos de evolução organizadas por posição e data.",
   "id": "./",
   "start_url": "./",
   "scope": "./",

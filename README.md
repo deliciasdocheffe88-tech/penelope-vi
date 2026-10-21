@@ -1,11 +1,12 @@
-# Penelope VII — atualização Meta de Peso
+# Penelope VIII — Fotos de Evolução
 
-Esta atualização adiciona acompanhamento de meta final de peso.
+Atualização focada na organização visual das fotos de progresso.
 
-- Meta padrão configurada: 85 kg.
-- Peso inicial de referência padrão: 121 kg.
-- Ambos podem ser alterados em Diário → Corpo.
-- A tela Hoje mostra peso atual, meta, quanto falta e percentual do caminho.
-- O painel Corpo também mostra o progresso.
-- Mantém banco de alimentos e alarme sonoro do timer.
-- Mantém o mesmo IndexedDB para preservar os registros locais.
+- Filtros: Todas, Frente, Lado, Costas e Outro.
+- Modo Agrupadas: separa as fotos por posição.
+- Modo Comparar lado a lado: cria uma faixa horizontal para comparar a mesma posição.
+- Ordem cronológica: da foto mais antiga para a mais recente.
+- Mantém as datas e observações.
+- Mantém o botão de exclusão em cada foto.
+- Preserva alimentação, meta de peso, treino e alarme sonoro do timer.
+- Mantém o mesmo IndexedDB (`penelope_i_db`, versão 2), portanto os registros locais existentes não são apagados pela atualização.
