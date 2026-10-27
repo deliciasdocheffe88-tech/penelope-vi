@@ -1,7 +1,7 @@
 {
-  "name": "Penelope VIII — Nutrição, Treino & Evolução",
-  "short_name": "Penelope VIII",
-  "description": "PWA pessoal para treino, nutrição, medidas e fotos de evolução organizadas por posição e data.",
+  "name": "Penelope IX — Nutrição, Treino & Evolução",
+  "short_name": "Penelope IX",
+  "description": "PWA pessoal para treino, nutrição, medidas, fotos de evolução e biblioteca de alimentos personalizados reutilizáveis.",
   "id": "./",
   "start_url": "./",
   "scope": "./",

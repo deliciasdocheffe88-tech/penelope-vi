@@ -64,3 +64,15 @@ canvas{width:100%;height:220px;background:#160f16;border:1px solid #5a3650;borde
 .photo-compare-strip::-webkit-scrollbar{height:6px}
 .photo-compare-strip::-webkit-scrollbar-thumb{background:#5a3650;border-radius:99px}
 @media(min-width:700px){.photo-compare-strip .photo-card{flex-basis:240px}}
+
+
+/* Penelope IX — alimentos personalizados reutilizáveis */
+.saved-food-note{margin:10px 0 12px;line-height:1.45}
+.custom-food-empty{margin:10px 0 2px}
+.custom-food-row{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;padding:11px 0;border-top:1px solid var(--line)}
+.custom-food-row:first-child{border-top:0}
+.custom-food-row>div:first-child{min-width:0;flex:1}
+.custom-food-actions{display:flex;gap:6px;flex:0 0 auto}
+.custom-food-actions .btn{padding:7px 10px;font-size:.72rem}
+.custom-food-badge{display:inline-block;margin-left:5px;padding:3px 6px;border-radius:999px;background:#352035;color:var(--accent2);font-size:.62rem;vertical-align:middle}
+@media(max-width:480px){.custom-food-row{flex-direction:column}.custom-food-actions{width:100%}.custom-food-actions .btn,.custom-food-actions .danger-mini{flex:1}}
