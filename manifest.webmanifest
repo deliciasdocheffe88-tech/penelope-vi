@@ -1,7 +1,7 @@
 {
-  "name": "Penelope IX — Nutrição, Treino & Evolução",
-  "short_name": "Penelope IX",
-  "description": "PWA pessoal para treino, nutrição, medidas, fotos de evolução e biblioteca de alimentos personalizados reutilizáveis.",
+  "name": "Penelope X — Treino 5x, Nutrição & Evolução",
+  "short_name": "Penelope X",
+  "description": "PWA pessoal com treino de recomposição corporal 5x por semana, nutrição, medidas, fotos e alimentos personalizados.",
   "id": "./",
   "start_url": "./",
   "scope": "./",
