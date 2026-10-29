@@ -1,21 +1,15 @@
-# Penelope X — ajuste de abdômen 3x/semana
+# Penelope X — Alarme do timer reforçado
 
-Pequena atualização da rotina oficial da Penelope X.
+Atualização pequena e específica do timer de descanso.
 
-## Alteração realizada
+## O que mudou
 
-O abdominal na máquina com carga foi redistribuído para os três dias de membros superiores:
+- O aviso sonoro ficou mais forte e mais perceptível.
+- O alarme agora usa uma sequência de 6 toques, com frequências alternadas.
+- Os toques principais usam onda quadrada, que costuma se destacar melhor em ambientes com ruído.
+- Há uma segunda camada sonora mais aguda para aumentar a percepção do aviso.
+- A vibração também ficou mais longa e forte em aparelhos compatíveis.
 
-- Terça (Push): 2x10–15, RIR 1–2, descanso 75 s.
-- Quarta (Pull): 2x10–15, RIR 1–2, descanso 75 s.
-- Sexta (Superiores Estético): 2x10–15, RIR 1–2, descanso 75 s.
+Nenhum treino, alimento, foto, medida, meta ou registro foi alterado.
 
-O abdominal foi retirado da segunda-feira (Inferiores A).
-
-Total semanal direto de abdômen: 6 séries.
-
-## Preservação
-
-Nenhuma outra parte do treino foi alterada.
-O banco IndexedDB permanece `penelope_i_db`, versão 3.
-Alimentação, Meus Alimentos, fotos, medidas, meta de peso, histórico e timer com alarme permanecem preservados.
+Observação: o volume final ainda depende do volume de mídia do celular e das limitações do próprio navegador/aparelho.
