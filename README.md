@@ -1,15 +1,19 @@
-# Penelope X — Alarme do timer reforçado
+# Penelope X — correção de sincronização do treino
 
-Atualização pequena e específica do timer de descanso.
+Esta atualização corrige um comportamento dos treinos em andamento.
 
-## O que mudou
+## Problema corrigido
 
-- O aviso sonoro ficou mais forte e mais perceptível.
-- O alarme agora usa uma sequência de 6 toques, com frequências alternadas.
-- Os toques principais usam onda quadrada, que costuma se destacar melhor em ambientes com ruído.
-- Há uma segunda camada sonora mais aguda para aumentar a percepção do aviso.
-- A vibração também ficou mais longa e forte em aparelhos compatíveis.
+A Penelope preserva um "rascunho" do treino do dia no IndexedDB. Se a ficha fosse atualizada depois que esse rascunho já havia sido criado, ele continuava usando a estrutura antiga — por isso o abdominal podia não aparecer mesmo com a nova ficha já publicada.
 
-Nenhum treino, alimento, foto, medida, meta ou registro foi alterado.
+## Correção
 
-Observação: o volume final ainda depende do volume de mídia do celular e das limitações do próprio navegador/aparelho.
+Agora, ao abrir um treino em andamento, a Penelope sincroniza o rascunho com a ficha atual:
+
+- adiciona exercícios novos, como o abdominal;
+- atualiza séries, repetições, RIR e descanso;
+- mantém cargas, repetições, RIR e séries já registradas;
+- preserva exercícios antigos que já tenham séries salvas, para não perder dados;
+- não altera treinos já finalizados no histórico.
+
+Nenhum dado de alimentação, fotos, medidas, meta de peso, Meus Alimentos ou histórico finalizado é apagado.
