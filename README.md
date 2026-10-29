@@ -1,23 +1,21 @@
-# Penelope X — Treino 5x / Recomposição Corporal
+# Penelope X — ajuste de abdômen 3x/semana
 
-Atualização do bloco de treinamento para musculação de segunda a sexta, com sábado e domingo destinados à recuperação.
+Pequena atualização da rotina oficial da Penelope X.
 
-## Estrutura semanal
+## Alteração realizada
 
-- Segunda — Inferiores A: glúteos + posteriores
-- Terça — Push: peito + ombros + tríceps
-- Quarta — Pull: costas + posterior de ombro + bíceps
-- Quinta — Inferiores B: quadríceps + glúteos
-- Sexta — Superiores Estético: costas + ombros + braços
-- Sábado — descanso
-- Domingo — descanso
+O abdominal na máquina com carga foi redistribuído para os três dias de membros superiores:
 
-## Objetivo do bloco
+- Terça (Push): 2x10–15, RIR 1–2, descanso 75 s.
+- Quarta (Pull): 2x10–15, RIR 1–2, descanso 75 s.
+- Sexta (Superiores Estético): 2x10–15, RIR 1–2, descanso 75 s.
 
-Recomposição corporal: apoiar a perda de gordura enquanto preserva/desenvolve massa muscular, com hipertrofia global e ênfase estética em pernas, glúteos, ombros e tríceps.
+O abdominal foi retirado da segunda-feira (Inferiores A).
 
-O tríceps recebe 8 séries diretas semanais, além do trabalho indireto nos exercícios de empurrar.
+Total semanal direto de abdômen: 6 séries.
 
-## Preservação dos dados
+## Preservação
 
-Esta atualização não altera o banco IndexedDB atual (`penelope_i_db`, versão 3). Histórico, nutrição, alimentos personalizados, medidas, fotos, medicações, meta de peso e registros anteriores permanecem preservados.
+Nenhuma outra parte do treino foi alterada.
+O banco IndexedDB permanece `penelope_i_db`, versão 3.
+Alimentação, Meus Alimentos, fotos, medidas, meta de peso, histórico e timer com alarme permanecem preservados.
