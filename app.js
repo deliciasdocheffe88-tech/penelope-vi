@@ -1,9 +1,12 @@
 "use strict";
 const ROUTINE=window.PENELOPE_ROUTINE,DB_NAME="penelope_i_db",DB_VERSION=3,STORE_WORKOUTS="workouts",STORE_SETTINGS="settings",STORE_RECORDS="records",STORE_NUTRITION="nutrition",STORE_MEASURES="measures",STORE_MEDS="meds",STORE_PHOTOS="photos",STORE_CUSTOM_FOODS="customFoods";
 const DEFAULT_NUTRITION_GOALS={kcal:1608,protein:151,carbs:151,fat:42,fiber:30,water:3500};
-const CURRENT_ROUTINE_PATCH_VERSION="Penelope X 10.4";
+const CURRENT_ROUTINE_PATCH_VERSION="Penelope X 10.8.1";
 function enforceCurrentRoutinePatch(){
   if(!ROUTINE?.plans)return;
+  ROUTINE.version="Penelope X — Bloco Definição 10.8.1";
+  ROUTINE.phase="Emagrecimento + definição — máxima preservação muscular e possibilidade de hipertrofia";
+
   const abdominal={name:"Abdominal máquina com carga",sets:2,repMin:10,repMax:15,rirMin:1,rirMax:2,rest:75};
   const removeAb=(plan)=>{
     if(!ROUTINE.plans[plan]?.exercises)return;
@@ -16,14 +19,34 @@ function enforceCurrentRoutinePatch(){
     if(found)Object.assign(found,abdominal);
     else p.exercises.push({...abdominal});
   };
+  const setSets=(plan,name,sets)=>{
+    const ex=ROUTINE.plans[plan]?.exercises?.find(x=>x.name===name);
+    if(ex)ex.sets=sets;
+  };
+
   removeAb("A");
   removeAb("D");
   ensureAb("B");
   ensureAb("C");
   ensureAb("E");
-  if(ROUTINE.plans.B)ROUTINE.plans.B.focus="Hipertrofia da parte anterior do tronco, deltoides e prioridade direta para tríceps, com trabalho abdominal ao final";
-  if(ROUTINE.plans.C)ROUTINE.plans.C.focus="Construção de costas, deltoide posterior e braços, com trabalho abdominal ao final";
-  if(ROUTINE.plans.E)ROUTINE.plans.E.focus="Segundo estímulo de superiores com ênfase visual em costas, ombros, tríceps e abdômen";
+
+  setSets("B","Elevação lateral máquina",2);
+  setSets("B","Tríceps acima da cabeça na polia",1);
+  setSets("C","Rosca martelo na polia / máquina",1);
+  setSets("D","Leg press 45° ênfase quadríceps",2);
+  setSets("D","Adutora",1);
+  setSets("E","Puxada neutra / articulada",2);
+  setSets("E","Rosca bíceps máquina",1);
+
+  for(const p of ["A","C","D"])if(ROUTINE.plans[p])ROUTINE.plans[p].cardio=null;
+  if(ROUTINE.plans.B)ROUTINE.plans.B.cardio={type:"Bike",minutesMin:20,minutesMax:25,optional:false,target:"Moderada · esforço 5–6/10"};
+  if(ROUTINE.plans.E)ROUTINE.plans.E.cardio={type:"Bike",minutesMin:20,minutesMax:25,optional:false,target:"Moderada · esforço 5–6/10"};
+
+  if(ROUTINE.plans.A)ROUTINE.plans.A.focus="Glúteos e posteriores com volume eficiente, complementando adutores e panturrilhas";
+  if(ROUTINE.plans.B)ROUTINE.plans.B.focus="Peito, ombros e tríceps com volume de hipertrofia ajustado ao déficit; abdominal e bike moderada ao final";
+  if(ROUTINE.plans.C)ROUTINE.plans.C.focus="Costas, deltoide posterior e bíceps com boa relação estímulo-fadiga; abdominal ao final";
+  if(ROUTINE.plans.D)ROUTINE.plans.D.focus="Quadríceps e glúteos com volume suficiente para hipertrofia, preservando recuperação no déficit";
+  if(ROUTINE.plans.E)ROUTINE.plans.E.focus="Segundo estímulo de superiores com ênfase estética em costas, ombros, tríceps e abdômen; bike moderada ao final";
 }
 enforceCurrentRoutinePatch();
 
