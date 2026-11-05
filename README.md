@@ -1,28 +1,29 @@
-# Penelope X — correção definitiva de cache da rotina
+# Penelope X — atualização nutricional 04/11/2026
 
-Esta atualização corrige a causa do abdominal não aparecer no aplicativo instalado.
+Atualização baseada no plano alimentar e na avaliação nutricional de 04/11/2026.
 
-## Causa
+## Metas diárias
+- 1.608 kcal
+- Proteína: 151 g
+- Carboidratos: 151 g
+- Gorduras: 42 g
+- Fibras: 30 g
+- Água: 3.500 ml
 
-A ficha de treino é definida no `index.html`, enquanto o aplicativo também carrega `app.js`.
-O service worker anterior trabalhava em modo **cache-first**, então o PWA podia abrir uma combinação inconsistente:
-um `app.js` novo com um `index.html` antigo ainda armazenado em cache.
+A meta de fibras foi mantida em 30 g porque o plano novo não trouxe um alvo numérico específico.
 
-Nesse cenário, o código de sincronização funcionava, mas sincronizava o treino com uma versão antiga da ficha — sem o abdominal.
+## Nova linha de base corporal
+Somente se ainda não existir uma medida em 04/11/2026:
+- Peso: 92,8 kg
+- Gordura corporal: 41,9%
+- Cintura: 92 cm
+- Abdômen: 98 cm
+- Quadril: 118 cm
+- Coxa proximal: 60 cm
+- Braço relaxado: 35 cm
 
-## Correções
+A meta histórica de peso continua partindo de 121 kg até 85 kg; 92,8 kg entra como peso atual, sem apagar o progresso anterior.
 
-1. `app.js` agora reforça, em tempo de execução, a configuração atual do abdominal:
-   - Terça (B): 2x10–15, RIR 1–2, 75 s.
-   - Quarta (C): 2x10–15, RIR 1–2, 75 s.
-   - Sexta (E): 2x10–15, RIR 1–2, 75 s.
-   - Segunda (A) e quinta (D): sem abdominal.
-
-2. O service worker passou a usar **network-first** para `index.html`, `app.js`, `styles.css` e `manifest.webmanifest`.
-   Assim, quando houver internet, a Penelope busca primeiro a versão publicada mais recente.
-
-3. O registro do service worker agora também solicita `update()` no boot.
-
-4. A sincronização de treinos em andamento continua preservando séries já registradas.
-
-Nenhum dado do IndexedDB é apagado ou reinicializado.
+## Preservação
+Treinos, histórico, alimentos personalizados, fotos, medicações, timer, alarme e registros antigos permanecem intactos.
+A alteração das metas nutricionais é aplicada uma única vez por versão do plano.
