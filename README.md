@@ -1,24 +1,30 @@
-# Penelope X — histórico completo de medidas
+# Penelope X — Bloco Definição 10.8
 
-Atualização do Diário → Corpo → Histórico de registros.
+Ajuste do programa após revisão técnica para alinhar o treino ao objetivo principal:
+**perda de gordura com máxima preservação de massa muscular, possibilidade de hipertrofia e melhora de definição corporal.**
 
-## O que mudou
+## Volume semanal
+O volume foi reduzido de aproximadamente 83 para **76 séries efetivas por semana**, melhorando a relação estímulo-fadiga durante o déficit calórico.
 
-Cada registro de medidas continua mostrando um resumo compacto, mas agora pode ser expandido em **Ver todas as medidas registradas**.
+- Segunda — Inferiores A: 16 séries
+- Terça — Push: 15 séries + bike
+- Quarta — Pull: 15 séries
+- Quinta — Inferiores B: 15 séries
+- Sexta — Superiores Estético: 15 séries + bike
 
-Ao abrir, a Penelope mostra todos os dados efetivamente preenchidos naquele registro:
+## Ajustes
+- Terça: elevação lateral 3→2; tríceps acima da cabeça 2→1.
+- Quarta: rosca martelo 2→1.
+- Quinta: leg press quadríceps 3→2; adutora 2→1.
+- Sexta: puxada neutra 3→2; bíceps máquina 2→1.
 
-- Peso
-- Gordura corporal
-- Busto
-- Cintura
-- Abdômen
-- Quadril
-- Coxa
-- Braço
+## Cardio
+Bike prescrita **2x por semana**, após os treinos de superiores de terça e sexta:
+- 20–25 minutos
+- intensidade moderada
+- esforço-alvo aproximado 5–6/10
 
-Campos que não foram informados naquele registro não são exibidos como se tivessem valor.
+## Preservação de dados
+Treinos finalizados, séries já registradas, alimentação, metas nutricionais, medidas, fotos, Meus Alimentos, medicações e histórico permanecem preservados.
 
-A alteração vale também para registros antigos já salvos; nenhum histórico foi apagado ou recriado.
-
-Todos os demais recursos da Penelope X permanecem preservados.
+A sincronização de treinos em andamento também foi refinada para preservar séries extras que já tenham sido salvas, mesmo quando a nova prescrição reduz o número de séries.
