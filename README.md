@@ -1,27 +1,24 @@
-# Penelope X — meta atual dinâmica no Diário
+# Penelope X — histórico completo de medidas
 
-Correção do bloco **Resumo do dia** em Diário → Alimentação.
+Atualização do Diário → Corpo → Histórico de registros.
 
 ## O que mudou
 
-O texto que antes mostrava uma meta inicial fixa foi removido.
+Cada registro de medidas continua mostrando um resumo compacto, mas agora pode ser expandido em **Ver todas as medidas registradas**.
 
-Agora o Resumo do dia mostra sempre a **meta atual salva** no aplicativo:
-- calorias;
-- proteína;
-- carboidratos;
-- gorduras;
-- fibras;
-- água.
+Ao abrir, a Penelope mostra todos os dados efetivamente preenchidos naquele registro:
 
-Se as metas forem alteradas em **Configurar metas diárias** e salvas, o texto do Resumo do dia é atualizado imediatamente.
+- Peso
+- Gordura corporal
+- Busto
+- Cintura
+- Abdômen
+- Quadril
+- Coxa
+- Braço
 
-As metas atuais permanecem:
-- 1.608 kcal
-- 151 g proteína
-- 151 g carboidratos
-- 42 g gorduras
-- 30 g fibras
-- 3,5 L água
+Campos que não foram informados naquele registro não são exibidos como se tivessem valor.
 
-Todos os demais recursos da Penelope X foram preservados.
+A alteração vale também para registros antigos já salvos; nenhum histórico foi apagado ou recriado.
+
+Todos os demais recursos da Penelope X permanecem preservados.
